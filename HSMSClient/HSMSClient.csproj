@@ -55,9 +55,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="Service References\ServiceReference1\HSMSClient.ServiceReference1.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -69,6 +66,9 @@
     <None Include="Service References\ServiceReference1\HSMSService.xsd" />
     <None Include="Service References\ServiceReference1\HSMSService1.xsd" />
     <None Include="Service References\ServiceReference1\HSMSService2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
