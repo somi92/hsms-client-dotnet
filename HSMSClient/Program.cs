@@ -25,11 +25,11 @@ namespace HSMSClient
 
             if (priority == 0)
             {
-                array = service.getAllActions();
+                array = service.GetAllActions();
             }
             else
             {
-                array = service.getActionsByPriority(priority);
+                array = service.GetActionsByPriority(priority);
             }
 
             string header = string.Format("{0,-5}{1,-60}{2,-10}{3,-15}{4,-40}{5,15}","ID","AKCIJA","BROJ","CENA SMS-a","ORGANIZACIJA","PRIORITET");

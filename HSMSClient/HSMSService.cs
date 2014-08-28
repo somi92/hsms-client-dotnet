@@ -131,11 +131,11 @@ namespace HSMSWebService
 public interface IHSMSService
 {
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/getAllActions", ReplyAction="http://tempuri.org/IHSMSService/getAllActionsResponse")]
-    HSMSWebService.HSMS[] getAllActions();
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/GetAllActions", ReplyAction="http://tempuri.org/IHSMSService/GetAllActionsResponse")]
+    HSMSWebService.HSMS[] GetAllActions();
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/getActionsByPriority", ReplyAction="http://tempuri.org/IHSMSService/getActionsByPriorityResponse")]
-    HSMSWebService.HSMS[] getActionsByPriority(int priority);
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/GetActionsByPriority", ReplyAction="http://tempuri.org/IHSMSService/GetActionsByPriorityResponse")]
+    HSMSWebService.HSMS[] GetActionsByPriority(int priority);
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
@@ -172,13 +172,13 @@ public partial class HSMSServiceClient : System.ServiceModel.ClientBase<IHSMSSer
     {
     }
     
-    public HSMSWebService.HSMS[] getAllActions()
+    public HSMSWebService.HSMS[] GetAllActions()
     {
-        return base.Channel.getAllActions();
+        return base.Channel.GetAllActions();
     }
     
-    public HSMSWebService.HSMS[] getActionsByPriority(int priority)
+    public HSMSWebService.HSMS[] GetActionsByPriority(int priority)
     {
-        return base.Channel.getActionsByPriority(priority);
+        return base.Channel.GetActionsByPriority(priority);
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\bin\Release\HSMSClient.exe.config
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\bin\Release\HSMSClient.exe
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\bin\Release\HSMSClient.pdb
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\obj\x86\Release\HSMSClient.exe
+C:\Users\Milos\Documents\Visual C#\HSMSClient\HSMSClient\obj\x86\Release\HSMSClient.pdb
