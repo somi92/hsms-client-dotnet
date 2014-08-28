@@ -18,12 +18,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:50517/HSMSService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:50517/HSMSService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="HSMSService.xsd" MetadataType="Schema" ID="7680d024-a8d8-4389-b23a-8d1e69b49886" SourceId="1" SourceUrl="http://localhost:50517/HSMSService.svc?xsd=xsd0" />
     <MetadataFile FileName="HSMSService1.xsd" MetadataType="Schema" ID="06b02c59-e631-4fc4-b3c6-35503893fbf6" SourceId="1" SourceUrl="http://localhost:50517/HSMSService.svc?xsd=xsd1" />
     <MetadataFile FileName="HSMSService.wsdl" MetadataType="Wsdl" ID="3dc64ad5-e8df-46cd-91c9-d5c172adbdd9" SourceId="1" SourceUrl="http://localhost:50517/HSMSService.svc?wsdl" />
+    <MetadataFile FileName="HSMSService.disco" MetadataType="Disco" ID="daafb8c7-a106-4cee-8e1a-3943500796c0" SourceId="1" SourceUrl="http://localhost:50517/HSMSService.svc?disco" />
     <MetadataFile FileName="HSMSService2.xsd" MetadataType="Schema" ID="5164074b-1bb6-4b11-a8dd-8176edc37e84" SourceId="1" SourceUrl="http://localhost:50517/HSMSService.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>

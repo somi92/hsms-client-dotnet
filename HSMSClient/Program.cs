@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using HSMSWebService;
 
 namespace HSMSClient
 {
@@ -21,7 +22,7 @@ namespace HSMSClient
             Console.WriteLine("Povezivanje sa servisom...");
             Console.WriteLine();
             HSMSServiceClient service = new HSMSServiceClient();
-            HSMSWebService.HSMS[] array;
+            HSMS[] array;
 
             if (priority == 0)
             {
