@@ -15,57 +15,6 @@ namespace HSMSWebService
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/HSMSWebService")]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject
-    {
-        
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private bool BoolValueField;
-        
-        private string StringValueField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
-        {
-            get
-            {
-                return this.extensionDataField;
-            }
-            set
-            {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue
-        {
-            get
-            {
-                return this.BoolValueField;
-            }
-            set
-            {
-                this.BoolValueField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue
-        {
-            get
-            {
-                return this.StringValueField;
-            }
-            set
-            {
-                this.StringValueField = value;
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="HSMS", Namespace="http://schemas.datacontract.org/2004/07/HSMSWebService")]
     public partial class HSMS : object, System.Runtime.Serialization.IExtensibleDataObject
     {
@@ -182,12 +131,6 @@ namespace HSMSWebService
 public interface IHSMSService
 {
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/GetData", ReplyAction="http://tempuri.org/IHSMSService/GetDataResponse")]
-    string GetData(int value);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IHSMSService/GetDataUsingDataContractResponse")]
-    HSMSWebService.CompositeType GetDataUsingDataContract(HSMSWebService.CompositeType composite);
-    
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHSMSService/getAllActions", ReplyAction="http://tempuri.org/IHSMSService/getAllActionsResponse")]
     HSMSWebService.HSMS[] getAllActions();
     
@@ -227,16 +170,6 @@ public partial class HSMSServiceClient : System.ServiceModel.ClientBase<IHSMSSer
     public HSMSServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(binding, remoteAddress)
     {
-    }
-    
-    public string GetData(int value)
-    {
-        return base.Channel.GetData(value);
-    }
-    
-    public HSMSWebService.CompositeType GetDataUsingDataContract(HSMSWebService.CompositeType composite)
-    {
-        return base.Channel.GetDataUsingDataContract(composite);
     }
     
     public HSMSWebService.HSMS[] getAllActions()
